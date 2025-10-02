@@ -2,14 +2,14 @@
   "name": "chatbot-app",
   "version": "1.0.0",
   "description": "A chatbot application that integrates with n8n to provide smart assistance.",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
     "axios": "^0.21.1"
   },
-  "author": "Your Name",
+  "author": "Aditya Shelar",
   "license": "MIT"
 }
