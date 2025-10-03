@@ -33,10 +33,11 @@ app.post('/api/message', async (req, res) => {
         res.status(500).json({ error: 'Failed to send message to webhook' });
     }
 });
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
     res.send("Server is running! Use POST /api/message for chatbot.");
 });
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
+
