@@ -7,7 +7,7 @@ const webhook = require("./webhook");
 app.use(express.json());
 
 // Serve static files from public
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname)));
 
 app.post('/api/message', async (req, res) => {
     const userMessage = req.body.message;
