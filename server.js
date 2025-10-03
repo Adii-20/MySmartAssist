@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const webhook = require('./n8n/webhook');
+const webhook = require("./webhook");
 
 
 app.use(express.json());
