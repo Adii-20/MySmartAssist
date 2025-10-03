@@ -34,6 +34,9 @@ app.post('/api/message', async (req, res) => {
     }
 });
 const PORT = 3000;
+app.get("/", (req, res) => {
+    res.send("Server is running! Use POST /api/message for chatbot.");
+});
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
